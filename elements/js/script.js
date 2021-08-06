@@ -1,0 +1,26 @@
+'use strict';
+const hearts =document.querySelectorAll('.heart');
+console.log(hearts);
+hearts.forEach(value=>{
+    value.style.backgroundColor = 'blue';
+});
+const circles = document.querySelectorAll('.circle');
+const firstHeart = document.querySelector('.heart');
+firstHeart.style.backgroundColor = 'black';
+const box =document.querySelector('#box');
+console.dir(box);
+// box.style.backgroundColor = 'yellow';
+// box.style.width= '500px';
+const buttons = document.querySelectorAll('button');
+console.log(buttons);
+buttons[1].style.borderRadius = '100%';
+box.style.cssText = 'background-color:green; width:600px';
+const div = document.createElement('div');
+div.classList.add('black');
+// document.body.prepend(div);
+const wrap=document.querySelector('.wrapper');
+ wrap.prepend(div);
+// hearts[1].after(div);
+// hearts[0].replaceWith(circles[1]);
+div.innerHTML = '<h1>Hello world!</h1>';
+div.insertAdjacentHTML('beforebegin','<h2>my name is</h2>');
